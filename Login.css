@@ -1,0 +1,101 @@
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: lavender;
+    opacity: 90%;
+    height: 100vh;  
+}
+.items{
+    padding: 50px;
+    background: lightslategrey;
+    height: 50vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.heading h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #3c00a0;
+    position: relative;
+    text-align: center;
+}
+.heading h1::after{
+    content: '';
+    width: 50px;
+    height: 5px;
+    background: #3c00a0;
+    position: absolute;
+    border-radius: 4px;
+    left: 50%;
+    bottom: -20px;
+    transform :translateX(-50%)
+}
+
+.data{
+    height: 20vh;
+    
+}
+.field{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    height: 40px;
+    width: 100%;
+    border-radius:5px;
+    opacity: 80%;
+    text-transform: capitalize;
+    margin-top: 10px;
+    border:1px solid lightblue;
+    box-shadow: 2px 2px 5px lavender;
+
+
+}
+.field:hover{
+    opacity: 100%;
+}
+.Forgot{
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-bottom: 40px ;
+    margin-top: 5px ;
+    position: relative;
+    /* left: 25px; */
+}
+.lastone button{
+    padding: 1em 4em;
+    border-radius: 15px;
+    font-size: 1em;
+    text-transform: capitalize;
+    font-family: sans-serif 'monoscope';
+    background:#3c00a0;
+    color: #fff;
+    box-shadow: 1px -1px 10px rgb(228, 228, 228);
+    border: 1px solid lightgray;
+}
+.lastone{
+    padding: 4px;
+ 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+
+}
+.Forgot a{
+  text-decoration: none;
+}
+.lastone button.disable{
+    background: #eaeaea;
+    color:#555;
+}
